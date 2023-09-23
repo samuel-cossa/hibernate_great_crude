@@ -6,14 +6,16 @@ import net.javaguides.hibernate.dao.StudentDao;
 import net.javaguides.hibernate.entity.Student;
 
 public class Application {
-//    metodo main
+    
 	public static void main(String[] args) {
 		StudentDao studentDao = new StudentDao();
-		Student student = new Student("Ramesh", "Fadatare", "rameshfadatare@javaguides.com");
+		Student student = new Student("Samuel", "Cossa", "ar.sam.cossa@uem.ac.mz");
 		studentDao.saveStudent(student);
-		studentDao.insertStudent();
+                Student student3 = new Student("Fortunatia", "Machava", "natty.machava@nurse");
+//		studentDao.insertStudent();
+                studentDao.saveStudent(student3);
 		// update student
-		Student student1 = new Student("Ram", "Fadatare", "rameshfadatare@javaguides.com");
+		Student student1 = new Student("Sam", "Cossa", "ar.sam.cossa@uem.ac.mz");
 		studentDao.updateStudent(student1);
 		// get students
 		List<Student> students = studentDao.getStudents();
@@ -22,6 +24,6 @@ public class Application {
 		Student student2 = studentDao.getStudent(1);
 		System.out.println(student2.getFirstName());
 		// delete student
-		studentDao.deleteStudent(1);
+//		studentDao.deleteStudent(1);
 	}
 }
