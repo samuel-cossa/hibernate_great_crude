@@ -11,11 +11,11 @@ public class Application {
 		StudentDao studentDao = new StudentDao();
 		Student student = new Student("Samuel", "Cossa", "ar.sam.cossa@uem.ac.mz");
 		studentDao.saveStudent(student);
-                Student student3 = new Student("Fortunatia", "Machava", "natty.machava@nurse");
+                Student student3 = new Student("Kendra", "Machava", "natty.machava@nurse");
 //		studentDao.insertStudent();
                 studentDao.saveStudent(student3);
 		// update student
-		Student student1 = new Student("Sam", "Cossa", "ar.sam.cossa@uem.ac.mz");
+		Student student1 = new Student("Samuca", "Cossa", "ar.sam.cossa@uem.ac.mz");
 		studentDao.updateStudent(student1);
 		// get students
 		List<Student> students = studentDao.getStudents();
