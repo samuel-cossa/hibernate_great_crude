@@ -35,6 +35,14 @@ public class Person {
         this.nacionality = nacionality;
     }
 
+    public Person(Long id, String name, String nacionality) {
+        this.id = id;
+        this.name = name;
+        this.nacionality = nacionality;
+    }
+    
+    
+
     public Long getId() {
         return id;
     }
