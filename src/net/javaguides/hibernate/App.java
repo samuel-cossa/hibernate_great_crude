@@ -17,11 +17,11 @@ public class App {
     public static void main(String[] args) {
         PersonDao personDao = new PersonDao();
 //       System.out.println("ola hibernate");
-        Person person = new Person(1L,"Sam","Moz");
+        Person person = new Person(2L,"Amas","Moz");
         personDao.updatePerson(person);
         
-        Person person2 = personDao.selectPersonById(4L);
-        System.out.println("Person Melinha : "+person2);
+//        Person person2 = personDao.selectPersonById(4L);
+//        System.out.println("Person Melinha : "+person2);
         
 //        personDao.deletePerson(person);
         
